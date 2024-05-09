@@ -1,0 +1,61 @@
+<p-panel header="Pipes básicos de Angular" class="p-2">
+  <p>A continuación encontrarás una lista de Pipes incluídos en Angular</p>
+</p-panel>
+
+<div class="grid">
+  <div class="col-12 md:col-4">
+    <p-card header="Lowercase">
+      {{ textToTransform | lowercase }}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="Uppercase">
+      {{ textToTransform | uppercase }}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="Titlecase">
+      {{ textToTransform | titlecase }}
+    </p-card>
+  </div>
+  <div class="col-3">
+    <p-card header="Date">
+      <ul>
+        <li>{{ customDate }}</li>
+        <li>{{ customDate | date}}</li>
+      </ul>
+    </p-card>
+  </div>
+  <div class="col-3">
+    <p-card header="Date: 'short'">
+      <ul>
+        <li>{{ customDate }}</li>
+        <li>{{ customDate | date:'short'}}</li>
+      </ul>
+    </p-card>
+  </div>
+  <div class="col-3">
+    <p-card header="Date: 'long'">
+      <ul>
+        <li>{{ customDate }}</li>
+        <li>{{ customDate | date:'long'}}</li>
+      </ul>
+    </p-card>
+  </div>
+  <div class="col-3">
+    <p-card header="Date: 'MMMM/DD/YYYY'">
+      <ul>
+        <li>{{ customDate }}</li>
+        <li>{{ customDate | date:'MMMM, dd, yyyy'}}</li>
+      </ul>
+    </p-card>
+  </div>
+  <div class="col-12">
+    <p-card header="Date con traducción | date: 'long' : ' ' : 'fr-CA'">
+      <ul>
+        <li>{{ customDate }}</li>
+        <li>{{ customDate | date: 'long':'':'fr-CA' }}</li>
+      </ul>
+    </p-card>
+  </div>
+</div>
