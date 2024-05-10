@@ -1,1 +1,21 @@
-<p>numbers works!</p>
+<p-panel header="Pipes numéricos de Angular" class="p-2">
+  <p>A continuación encontrarás una lista de Pipes incluídos en Angular</p>
+</p-panel>
+
+<div class="grid">
+  <div class="col-12 md:col-4">
+    <p-card header="Decimal pipe '1.0-0'" subheader="Recibe como parámetro el número mínimo de dígitos enteros y decimales, al igual que el máximo de decimales. 'minI.minD-maxD'">
+      {{ sales | number: '1.0-0' }}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="Currency pipe" subheader="Debemos especificar el currencyCode, por defecto viene USD, también contamos con un display para el símbolo de la moneda 'symbol-narrow'">
+      {{ sales | currency:'CAD':'symbol-narrow' }}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="Percent pipe" subheader="Podemos especificar la cantidad de decimales de la misma forma que lo haríamos con el decimal pipe">
+      {{ percentage | percent:'1.2-2' }}
+    </p-card>
+  </div>
+</div>

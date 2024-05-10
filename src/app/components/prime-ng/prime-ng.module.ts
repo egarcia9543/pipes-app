@@ -4,6 +4,8 @@ import { MenubarModule } from 'primeng/menubar';
 import { CardModule } from 'primeng/card';
 import { FieldsetModule } from 'primeng/fieldset';
 import { PanelModule } from 'primeng/panel';
+import { InputTextModule } from 'primeng/inputtext';
+import { ChipModule } from 'primeng/chip';
 
 @NgModule({
   declarations: [],
@@ -12,14 +14,18 @@ import { PanelModule } from 'primeng/panel';
     CardModule,
     FieldsetModule,
     MenubarModule,
-    PanelModule
+    PanelModule,
+    InputTextModule,
+    ChipModule,
   ],
   exports: [
     ButtonModule,
     CardModule,
     FieldsetModule,
     MenubarModule,
-    PanelModule
+    PanelModule,
+    InputTextModule,
+    ChipModule,
   ]
 })
 export class PrimeNgModule { }

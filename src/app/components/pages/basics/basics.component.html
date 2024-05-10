@@ -5,17 +5,29 @@
 <div class="grid">
   <div class="col-12 md:col-4">
     <p-card header="Lowercase">
-      {{ textToTransform | lowercase }}
+      <div class="flex flex-row justify-content-between">
+        <input type="text" maxlength="15" pInputText name="lowerCaseWord" (input)="setWords($event)" />
+        <p-chip *ngIf="!lowerCaseWord" label="Resultado" />
+        <p>{{ lowerCaseWord | lowercase }}</p>
+      </div>
     </p-card>
   </div>
   <div class="col-12 md:col-4">
     <p-card header="Uppercase">
-      {{ textToTransform | uppercase }}
+      <div class="flex flex-row justify-content-between">
+        <input type="text" maxlength="15" pInputText name="upperCaseWord" (input)="setWords($event)"/>
+        <p-chip *ngIf="!upperCaseWord" label="Resultado" />
+        <p>{{ upperCaseWord | uppercase }}</p>
+      </div>
     </p-card>
   </div>
   <div class="col-12 md:col-4">
     <p-card header="Titlecase">
-      {{ textToTransform | titlecase }}
+      <div class="flex flex-row justify-content-between">
+        <input type="text" maxlength="15" pInputText name="titleCaseWord" (input)="setWords($event)"/>
+        <p-chip *ngIf="!titleCaseWord" label="Resultado" />
+        <p>{{ titleCaseWord | titlecase }}</p>
+      </div>
     </p-card>
   </div>
   <div class="col-3">
