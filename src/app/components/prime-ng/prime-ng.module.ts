@@ -6,6 +6,8 @@ import { FieldsetModule } from 'primeng/fieldset';
 import { PanelModule } from 'primeng/panel';
 import { InputTextModule } from 'primeng/inputtext';
 import { ChipModule } from 'primeng/chip';
+import { ToolbarModule } from 'primeng/toolbar';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [],
@@ -17,6 +19,8 @@ import { ChipModule } from 'primeng/chip';
     PanelModule,
     InputTextModule,
     ChipModule,
+    ToolbarModule,
+    TableModule
   ],
   exports: [
     ButtonModule,
@@ -26,6 +30,8 @@ import { ChipModule } from 'primeng/chip';
     PanelModule,
     InputTextModule,
     ChipModule,
+    ToolbarModule,
+    TableModule
   ]
 })
 export class PrimeNgModule { }
